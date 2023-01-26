@@ -9,8 +9,8 @@ namespace PR_1
         private User currentUser;
 
         static void Main(string[] args)
-        { 
-        
+        {
+            User user = new User("Костя", "kostya", "12345678");
         }
         public void addUser(string name, string login, string password,string repeation,int type)
         {
@@ -20,6 +20,12 @@ namespace PR_1
         { 
 
             return (User)users.Where(g=> g.enter(login,password)); 
-        } 
+        }
+        public void save()
+        { }
+        public void load() 
+        { }
+        public void processRequest() 
+        { }
     } 
 }
